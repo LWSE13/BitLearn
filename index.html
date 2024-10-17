@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BL: Programming Languages</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
         <div>
-            <img src="assets/images/BL-logo.png" alt="displays a green and white logo, a book with Bit learn text below">
+            <img id="bitlearn-logo" src="assets/images/BL-logo-copy.png" alt="displays a green and white logo, a book with Bit learn text below">
         </div>
     </header>
-    <!--Hero img here????-->
+    
+    <div id="hero-image-container">
+        <img src="assets/images/hero-image.jpg" alt="woman sitting at desk whilst coding">
+    </div>
+
     <div class="info-section" id="python">
         <div class="info-img">
-            <img src="assets/images/python.png" alt="displays a python logo, a snake with python text below">
+            <img class="info-image" src="assets/images/python-info.png" alt="displays a python logo, a snake with python text below">
         </div>
         <div class="info-text">
             <h2>Python</h2>
             <p>Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.</p>
-            <a href="python.html">Learn More</a>
         </div>
     </div>
+
     <div class="info-section" id="java">
         <div class="info-img">
             <img src="assets/images/java.png" alt="displays a java logo, a coffee cup with java text below">
@@ -31,6 +36,7 @@
             <p>Java is a high-level programming language developed by Sun Microsystems. It was originally designed for developing programs for set-top boxes and handheld devices, but later became a popular choice for creating web applications.</p>
             <a href="java.html">Learn More</a>
         </div>
+    </div>
     <div class="info-section" id="c++">
         <div class="info-img">
             <img src="assets/images/c++.png" alt="displays a c++ logo, a c++ text">
@@ -41,16 +47,24 @@
             <a href="c++.html">Learn More</a>
         </div>
     </div>
+
     <div id="hello-world-list">
+        <h4>Let's look at how a simple print statement is written in these languages using the example of "Hello World!" </h4>
         <ul id="appearing-list">
-            <li class="appearing-item">print("Hello World!")</li>
-            <li class="appearing-item">console.log("Hello World!")</li>
-            <li class="appearing-item">#include <iostream>
-                int main() {
-                    std::cout << "Hello, World!" << std::endl;
-                    return 0;
-                }</li>
+            <li class="appearing-item">Python - print("Hello World!")</li>
+            <li class="appearing-item">Javascript - console.log("Hello World!")</li>
+            <li class="appearing-item">C++ - std::cout << "Hello, World!" << std::endl;</li>
         </ul>
     </div>
+
+    <div id="chart-container">
+        <div id="chart">
+            <p>*DIFFICULTY CHART GOES HERE*</p>
+            <img src="assets/images/python-icon.png" alt="Python Icon">
+            <img src="assets/images/js-icon.png" alt="Javascript Icon">
+            <img src="assets/images/c++-icon.png" alt="C++ Icon">
+        </div>
+    </div>
+
 </body>
 </html>

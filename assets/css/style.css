@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    padding: 15px 0;
+}
+
+#bitlearn-logo {
+    width: 7%;
+    margin-left: 15px;
+}
+
+#hero-image-container {
+    background-image: url(../images/hero-image.jpg);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.info-image {
+    margin: 0 5px;
+}
+
+.info-text {
+    width: 50%;
+    background-color: #ffffff;
+    margin: 10px 0 ;
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(222, 222, 222);
+}
