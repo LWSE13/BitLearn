@@ -27,11 +27,19 @@ header {
 .info-section {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin: 0 10px;
 
 }
 
 .info-image {
     margin: 0 5px;
+
+}
+
+
+#js-img {
+ width:60%;
 }
 
 .info-text {
