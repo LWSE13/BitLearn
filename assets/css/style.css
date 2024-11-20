@@ -1,3 +1,9 @@
+:root {
+    --accent-color: #3a3b3b;
+    --main-color: #fff;
+    --secondary-color: #acffe1;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +29,7 @@ header {
 }
 
 #seperation-bar {
-    background-color: #3a3b3b;
+    background-color: var(--accent-color);
     border: solid 2px black;
 }
 
@@ -32,7 +38,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 50vh;
-    background: linear-gradient(-60deg,  #acffe1 55%, white 45%);
+    background: linear-gradient(-60deg,  var(--secondary-color) 55%, var(--main-color) 45%);
     border: solid 1px black;
 }
 
@@ -41,7 +47,10 @@ header {
     align-items: center;
     justify-content: center;
     height: 50vh;
-    background: linear-gradient(120deg,  #acffe1 55%, white 45%);
+    background: linear-gradient(120deg,  var(--secondary-color) 55%, var(--main-color) 45%);
+    text-align: center;
+    border: solid 1px black;
+
 }
 
 
@@ -66,8 +75,13 @@ nav {
     border-left: 2px solid #f1f1f1;
     border-right: 2px solid #ffffff;
     text-decoration: none;
-    color: #ffffff;
-    height: 100%;
+    color: var(--main-color);
+    transition: 0.5s;
+}
+
+.nav-link:hover {
+font-size: x-large;
+transition: 0.5s;
 }
 
 
@@ -82,11 +96,31 @@ nav {
 
 .hello-world-item, #intro-paragraph {
     font-size: x-large;
-    background-color: white;
+    background-color: var(--main-color);
 }
 
+.hello-world-item {
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: fadeIn 1s forwards;
+}
+
+.hello-world-item:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .hello-world-item:nth-child(2) {
+    animation-delay: 0.5s; 
+  }
+  
+  .hello-world-item:nth-child(3) {
+    animation-delay: 1s; 
+  }
+
 #intro-paragraph {
-    line-height: 5;
+    display: inline-block;
+    line-height: 3;
+    width: 80%;
 }   
 
 .info-section {
@@ -108,9 +142,16 @@ nav {
 
 .info-text {
     width: 50%;
-    background-color: #ffffff;
+    background-color: var(--main-color);
     margin: 10px 0 ;
     padding: 20px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid rgb(222, 222, 222);
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
