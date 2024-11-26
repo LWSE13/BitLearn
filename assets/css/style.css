@@ -1,5 +1,5 @@
 :root {
-    --accent-color: #3a3b3b;
+    --accent-color: #30353b;
     --main-color: #fff;
     --secondary-color: #acffe1;
 }
@@ -9,10 +9,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+
 }
 
 header {
-    background-color: #f1f1f1;
+    background-color: #b0bdca;
     padding: 15px 0 0 0;
 }
 
@@ -50,7 +52,7 @@ header {
     background: linear-gradient(120deg,  var(--secondary-color) 55%, var(--main-color) 45%);
     text-align: center;
     border: solid 1px black;
-
+    margin-bottom: 5px;
 }
 
 
@@ -94,9 +96,18 @@ transition: 0.5s;
     list-style-type: none;
 }
 
-.hello-world-item, #intro-paragraph {
-    font-size: x-large;
+.hello-world-item, .intro-line {
+    font-size: 1.7rem;
     background-color: var(--main-color);
+}
+
+
+
+
+#intro-paragraph {
+    display: inline-block;
+    width: 80%;
+    line-height: 2;
 }
 
 .hello-world-item {
@@ -117,11 +128,7 @@ transition: 0.5s;
     animation-delay: 1s; 
   }
 
-#intro-paragraph {
-    display: inline-block;
-    line-height: 3;
-    width: 80%;
-}   
+
 
 .info-section {
     display: flex;
@@ -131,22 +138,48 @@ transition: 0.5s;
 
 }
 
-.info-image {
-    margin: 0 5px;
+.info-img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 }
 
+.info-img {
+    width: 100%;
 
-#js-img {
- width:60%;
 }
+
 
 .info-text {
     width: 50%;
     background-color: var(--main-color);
-    margin: 10px 0 ;
     padding: 20px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid rgb(222, 222, 222);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20vh;
+}
+
+#decorative-line {
+    background-color: var(--accent-color);
+    border: solid 1.2px #f1f1f1;
+    margin-bottom: 15px;
+}
+
+#footer-top {
+    padding: 25px 30px;
+}
+
+#footer-bottom-text {
+    padding: 0px 25px 10px 25px;
+    font-size: large;
 }
 
 @keyframes fadeIn {
