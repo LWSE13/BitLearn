@@ -198,18 +198,19 @@ nav {
     border: solid 1px black;
 }
 
-#chart-title {
+.chart-title {
     text-decoration: underline;
     font-size: large;
 }
 
-#chart-container {
+.chart-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 60%;
     height: 100%;
+    outline: 1px solid black;
 }
 
 #bar-container {
@@ -232,18 +233,46 @@ nav {
     background-color: #72c7ef;
     outline: 2px solid #5b9ac1;
     height: 30%;
+    transition: 0.5s;
+}
+
+#python-bar:hover {
+    box-shadow: 0 0 15px #00d2ffcc,
+    0 0 20px #00d2ff99,
+    0 0 30px #00d2ff66,
+    0 0 40px #00d2ff33;
+    transition: 0.5s;
 }
 
 #java-bar {
     background-color: #ffd710;
     outline: 2px solid #ded466;
     height: 60%;
+    transition: 0.5s;
+}
+
+#java-bar:hover {
+    box-shadow: 0 0 15px #ffea00cc,
+    0 0 20px #e5ff0099,
+    0 0 30px #f6ff0066,
+    0 0 40px #fff70033;
+    transition: 0.5s;
 }
 
 #c-bar {
     background-color: #ef7272;
     outline: 2px solid #c15b5b;
     height: 90%;
+    transition: 0.5s;
+
+}
+
+#c-bar:hover {
+    box-shadow: 0 0 15px #ff0000cc,
+    0 0 20px #ff000099,
+    0 0 30px #ff000066,
+    0 0 40px #ff000033;
+    transition: 0.5s;
 }
 
 .graph-line {
@@ -280,7 +309,9 @@ nav {
 }
 
 #mid-section-inverted{
+    padding: 50px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 70vh;
@@ -294,6 +325,35 @@ nav {
     text-align: center;
     border: solid 1px black;
     margin-bottom: 5px;
+}
+
+#salary-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#language-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+}
+
+#language-list, ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+}
+
+#language-list, ul, li {
+    list-style-type: none;
+    font-size: 20px;
 }
 
 
